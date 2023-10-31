@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+public class Bakery {
+pubic static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+int choice;
+double total = 0
+
+System.out.printIn("WELCOME TO HAELLHA'S BAKERY!");
+
+do{
+System.out.printIn("Here are the Main Options!");
+System.out.printIn("1. Cakes");
+System.out.printIn("2. Breads");
+System.out.printIn("3. Cookies");
+System.out.printIn("4. Pies");
+System.out.printIn("5. Drinks");
+System.out.printIn("Enter your choice");
+choice = scanner.nextInt();
+
+switch (choice) {
+case 1:
+double cakesTotal = processCakes();
+total += cakesTotal;
+break;
+case 2:
+double breadsTotal = processBreads();
+total += breadsTotal;
+break;
+case 3:
+double cooiesTotal = processCookies();
+total += cookiesTotal;
+break;
+case 4:
+double piesTotal = procesPies();
+total += piesTotal;
+break;
+case 5:
+double drinksTotal = processDrinks();
+total += drinksTotal;
+break;
+
+default:
+System.out.printIn("Invalid choice. PLease enter a vaid option.");
+}
+System.out.printIn("                                                          ");
+System.out.print("Do you want to buy another product? (Y/N): ");
+
+} while (scanner.next().equalsIgnoreCase("Y");
+System.out.printIn("                                                          ");
+System.out.printIn("[Payment]);
+System.out.print("Total:" + total);
+
+double cash;
+double change;
+
+do {
+System.out.print(Enter
