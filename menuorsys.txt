@@ -59,4 +59,134 @@ double cash;
 double change;
 
 do {
-System.out.print(Enter
+System.out.print(Enter Payment (Cash): ");
+cash = scanner.nextDouble();
+if (cash < total) {
+System.out.println("Insufficient Cash!!!");
+}
+} while (cash < total);
+
+change = cash - total;
+
+System.out.println("Change: " + change);
+System.out.println("Thank you for buying on our dear Bakery!");
+System.out.println("(⁠｡⁠♡⁠‿⁠♡⁠｡⁠)");
+}
+
+public static double processCakes() {
+Scanner scanner = new Scanner(System.in);
+System.out.print("                                                            ");
+System.out.println("Cakes Sub-Menu:");
+System.out.println("1. Chocolate Cake: 50.00");
+System.out.println("2. Ube Cake: 50.00");
+System.out.println("3. Red Velvet Cake: 60.00");
+System.out.println("4. Ice Cream Cake: 85.00");
+System.out.print("Enter your choice: ");
+int choice = scanner.nextInt();
+
+double[] cakesPrices = { 50.00, 50.00, 60.00, 85.00 };
+double cakesPrice = cakesPrices[choice-1];
+
+System.out.print("Enter quantity: ");
+int quantity = scanner.nextInt();
+
+double cakesTotal = cakesPrice * quantity;
+System.out.println("Subtotal: " + cakesTotal);
+
+return cakesTotal;
+}
+
+public static double processBreads() {
+Scanner scanner = new Scanner(System.in);
+System.out.print("                                                            ");
+System.out.println("Breads Sub-Menu:");
+System.out.println("1. Baguette 45.00");
+System.out.println("2. Cinammonroll: 35.00");
+System.out.println("3. Pan au Chocola 20.00");
+System.out.println("2. Panso: 20.00");
+
+System.out.print("Enter choice: ");
+int choice = scanner.nextInt();
+
+double[] breadsPrices = { 45.00, 35.00, 20.00, 20.00 };
+double breadsPrice = breadsPrices[choice-1];
+
+System.out.print("Enter quantity: ");
+int quantity = scanner.nextInt();
+
+double breadsTotal = breadsPrice * quantity;
+System.out.println("Subtotal: " + breadsTotal);
+
+return breadsTotal;
+}
+
+public static double processCookies() {
+Scanner scanner = new Scanner(System.in);
+System.out.print("                                                            ");
+System.out.println("Cookies Sub-Menu:");
+System.out.println("1. Chocolate Cookies: 10.00");
+System.out.println("2. Ube Cookies: 12.00");
+System.out.println("3. Red Velvet Cookies: 15.00");
+System.out.println("4. Creamy Cookies: 20.00");
+System.out.print("Enter your choice: ");
+int choice = scanner.nextInt();
+
+double[] cookiesPrices = { 10.00, 12.00, 15.00, 20.00 };
+double cookiesPrice = cookiesPrices[choice-1];
+
+System.out.print("Enter quantity: ");
+int quantity = scanner.nextInt();
+
+double cookiesTotal = cookiesPrice * quantity;
+System.out.println("Subtotal: " + cookiesTotal);
+
+return cookiesTotal;
+}
+
+public static double processPies() {
+Scanner scanner = new Scanner(System.in);
+System.out.print("                                                            ");
+System.out.println("Pies Sub-Menu:");
+System.out.println("1. Egg Pie: 75.00");
+System.out.println("2. Apple Pie: 62.00");
+System.out.println("3. Buko Pie: 60.00");
+System.out.println("4. Pumpkin Pie: 80.00");
+System.out.print("Enter your choice: ");
+int choice = scanner.nextInt();
+
+double[] piesPrices = { 75.00, 62.00, 60.00, 80.00 };
+double piesPrice = piesPrices[choice-1];
+
+System.out.print("Enter quantity: ");
+int quantity = scanner.nextInt();
+
+double piesTotal = piesPrice * quantity;
+System.out.println("Subtotal: " + piesTotal);
+
+return piesTotal;
+}
+
+public static double processDrinks() {
+Scanner scanner = new Scanner(System.in);
+System.out.print("                                                            ");
+System.out.println("Drinks Sub-Menu:");
+System.out.println("1. Water: 20.00");
+System.out.println("2. Buko Juice: 15.00");
+System.out.println("3. Sprite: 25.00");
+System.out.println("4. ChocoMilk: 25.00");
+System.out.println("5. Coke: 30.00");
+System.out.print("Enter choice: ");
+int choice = scanner.nextInt();
+
+double[] drinksPrices = { 20.00, 15.00, 25.00, 25.00, 30.00 };
+double drinksPrice = drinksPrices[choice-1];
+
+System.out.print("Enter quantity: ");
+int quantity = scanner.nextInt();
+
+double drinksTotal = drinksPrice * quantity;
+System.out.println("Subtotal: " + drinksTotal);
+
+return drinksTotal;
+}
+}
