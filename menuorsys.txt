@@ -1,12 +1,5 @@
 this is my output for my exam
 on our OOP subject.
-we were tasked to make a
-menu or sys and use should use a
-loop that mimics the
-point of sale system.
-this is my
-menu or sys,
-bakery.
 
 
 import java.util.Scanner;
