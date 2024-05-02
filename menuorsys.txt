@@ -1,7 +1,3 @@
-this is my output for my exam
-on our OOP subject.
-
-
 import java.util.Scanner;
 
 public class Bakery {
